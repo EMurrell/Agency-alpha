@@ -1,15 +1,16 @@
 import FadeIn from "../animations/FadeIn";
 import FadeUp from "../animations/FadeUp";
 import { CheckIcon } from "@heroicons/react/outline";
+import Arrow from "./Arrow";
 
 const tiers = [
   {
     name: "Static",
     href: "#",
-    price: 699,
+    price: 749,
     description: "A quick way to get your business online.",
     features: [
-      "Up to 3 pages",
+      "One multi-page, multi-section website (up to 3 pages)",
       "2 revisions included",
       "Free non-premium stock photos and illustrations",
       "Custom domain*",
@@ -19,15 +20,15 @@ const tiers = [
   {
     name: "Dynamic",
     href: "#",
-    price: 1199,
+    price: 1249,
     description: "Gives you the power to edit.",
     features: [
-      "Up to 6 pages",
+      "One multi-page, multi-section website (up to 6 pages)",
       "3 revisions included",
       "Free non-premium stock photos and illustrations",
       "Custom domain*",
       "Assist with 'Google My Business' setup",
-      "Content management (CMS) - allows you to edit and publish changes",
+      "CMS integration - allows you to edit and publish changes without code",
       "Setup custom email hosting/Google Workspace**",
     ],
   },
@@ -60,9 +61,10 @@ export default function Pricing() {
                     className="flex flex-col overflow-hidden border shadow-lg border-highlight1"
                   >
                     <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
-                      <div>
+                      <div className="flex flex-row">
+                        <Arrow />
                         <h3
-                          className="inline-flex px-2 py-1 text-sm font-semibold tracking-wide uppercase text-neutral-900 bottom"
+                          className="inline-flex px-2 py-1 text-xl font-semibold tracking-wide uppercase md:text-2xl text-neutral-900 "
                           id="tier-standard"
                         >
                           {tier.name}
@@ -110,6 +112,10 @@ export default function Pricing() {
           <div className="relative px-4 mx-auto mt-8 text-xs max-w-7xl sm:px-6 lg:px-8 lg:mt-5 text-neutral-900">
             <div className="max-w-md mx-auto lg:max-w-5xl indent-4">
               <p>
+                <em>PLEASE NOTE:</em> &ensp;Does not include content creation
+                (i.e. copywriting, photography, graphic/logo design, etc).
+              </p>
+              <p>
                 * We buy the domain and pay for your first year. Domain renewal
                 typically starts at approximately $15 per YEAR. Premium domains
                 excluded, but may be purchased at an extra cost. We do not
@@ -119,7 +125,7 @@ export default function Pricing() {
                 ** Custom email hosting/
                 <a
                   href="https://workspace.google.com/pricing.html?gclid=CjwKCAiA55mPBhBOEiwANmzoQmEuufRueGbdWlalzcLKSN_WebvB_43Mrwr9IBaGv5gXlLcFq29VgBoCFnMQAvD_BwE&gclsrc=aw.ds"
-                  className="underline"
+                  className="italic underline"
                 >
                   Google Workspace
                 </a>{" "}

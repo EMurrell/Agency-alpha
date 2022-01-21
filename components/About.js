@@ -35,7 +35,7 @@ export default function About() {
                 are built on modern web technologies&nbsp;
                 <a
                   href="https://jamstack.org/what-is-jamstack/"
-                  className=" text-highlight1 hover:text-highlight1"
+                  className="italic  text-highlight1 hover:text-highlight1"
                 >
                   (Jamstack)
                 </a>

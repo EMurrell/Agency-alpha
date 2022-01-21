@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <section
       id="Home"
-      className="flex flex-col w-full h-screen px-2 pt-20 text-white bg-right bg-no-repeat bg-cover bg-hero font-display md:px-10 lg:px-20 xl:px-28 "
+      className="flex flex-col w-full h-screen px-2 pt-20 text-white bg-center bg-no-repeat bg-cover bg-hero font-display md:px-10 lg:px-20 xl:px-28 "
     >
       <main className="flex flex-col justify-center h-screen pt-8 pl-2 font-medium tracking-tight pb-28 md:tracking-normal md:pb-16">
         <FadeUp>

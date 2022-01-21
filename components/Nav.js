@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon } from "@heroicons/react/outline";
-import { Sling as Hamburger } from "hamburger-react";
+import { Spiral as Hamburger } from "hamburger-react";
 import { useState, useEffect } from "react";
 
 const links = [
@@ -60,11 +60,11 @@ export default function Nav() {
       <div
         className={`flex w-screen py-4 bg-transparent   ${
           animateNav &&
-          "py-0  backdrop-blur-lg bg-neutral-900/30 trasition ease-in-out duration-500"
+          "py-0  backdrop-blur-lg bg-neutral-800/30 trasition ease-in-out duration-500"
         } mx-auto   justify-between `}
       >
         <Link href="/">
-          <a className="inline-flex mx-4 my-5 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 hover:shadow-bottom ">
+          <a className="inline-flex mx-4 my-4 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 hover:shadow-bottom ">
             My Company
           </a>
         </Link>

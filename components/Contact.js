@@ -12,16 +12,16 @@ export default function Contact() {
   return (
     <footer
       id="Contact"
-      className="flex flex-col justify-around px-12 pt-10 bg-dark xl:h-auto md:px-24 lg:px-52 text-neutral-100 font-display"
+      className="flex flex-col px-12 pt-10 bg-dark xl:h-auto md:px-24 lg:px-52 text-neutral-100 font-display"
     >
       <div className="flex flex-col py-20 2xl:py-20 lg:flex-row ">
         <FadeUp>
-          <h1 className="pr-6 mb-12 text-4xl font-medium md:text-5xl lg:text-6xl lg:w-1/2">
+          <h1 className="pr-2 mb-12 text-4xl font-medium md:text-5xl lg:text-6xl lg:w-1/2">
             Let&apos;s make something great.
           </h1>
         </FadeUp>
         <FadeIn>
-          <div className="flex flex-col text-base text-left 2xl:flex-row lg:text-lg">
+          <div className="flex flex-col text-base lg:text-lg">
             <a href="mailto:emurrell.dev@gmail.com">
               <div className="flex flex-col mb-6 transition duration-300 ease-in-out transform cursor-pointer lg:mx-6 h-max w-max hover:shadow-bottom">
                 <h2 className="flex flex-row w-max">
@@ -33,15 +33,13 @@ export default function Contact() {
                 </p>
               </div>
             </a>
-            <a href="https://github.com/EMurrell">
+            <a href="">
               <div className="flex flex-col mb-6 transition duration-300 ease-in-out transform cursor-pointer lg:mx-6 h-max w-max hover:shadow-bottom">
                 <h2 className="flex flex-row w-max">
-                  Github &nbsp;
+                  Phone &nbsp;
                   <ArrowNarrowRightIcon className="w-4 h-4 mt-1 lg:h-5 md:h-5" />
                 </h2>
-                <p className=" text-neutral-500 font-body">
-                  github.com/EMurrell
-                </p>
+                <p className=" text-neutral-500 font-body">(613) 555-1234</p>
               </div>
             </a>
             <a href="https://twitter.com/emurrelldev">
@@ -65,7 +63,7 @@ export default function Contact() {
           <Tailwindcss className="w-6 h-6 mx-2" />
           <Framer className="w-6 h-6 mx-2" />
         </div>
-        &copy; {getCurrentYear()}
+        &copy; {getCurrentYear()} My Company
       </div>
     </footer>
   );
