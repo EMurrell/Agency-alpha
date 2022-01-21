@@ -4,90 +4,94 @@ import FadeRight from "../animations/FadeRight";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Arrow from "../components/Arrow.js";
 
-export default function Bio() {
+export default function About() {
   return (
     <section
       id="About"
-      className="flex flex-col px-12 py-16 md:py-36 md:px-24 lg:px-60 2xl:px-80 text-neutral-800 font-display "
+      className="flex flex-col px-8 py-10 md:py-24 md:px-24 lg:px-60 2xl:px-80 text-neutral-900 font-display"
     >
-      <FadeRight>
+      <FadeUp>
         <div className="flex lg:justify-center">
-          <span className="text-4xl font-medium w-max md:text-5xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
-            About
+          <span className="py-4 text-4xl font-medium md:text-5xl lg:text-6xl">
+            Why Choose Us?
           </span>
         </div>
-      </FadeRight>
+      </FadeUp>
 
-      <div className="pt-8 text-xl font-normal lg:text-center md:text-2xl ">
-        <FadeIn>
-          <p className="py-4">
-            I am a Full Stack Web Developer, with a focus on Jamstack
-            technology.
-          </p>
-        </FadeIn>
-        <FadeIn>
-          <p className="pb-10 md:pb-20">
-            I have a passion for creating engaging digital products.
-          </p>
-        </FadeIn>
+      <div className="pt-4 text-2xl font-normal md:text-3xl lg:text-4xl">
+        <div className="flex flex-col pb-4">
+          <FadeRight>
+            <div className="py-8">
+              <h2 className="flex flex-row pb-2">
+                <Arrow />
+                Ultra-Fast
+              </h2>
 
-        <div className="flex flex-col justify-center py-4 lg:flex-row ">
-          <FadeIn>
-            <div className="flex flex-col items-center pb-12 text-center lg:pb-0 lg:px-12">
-              <span className="pb-2 text-2xl font-medium md:text-3xl">
-                Responsive
-              </span>
-              <Image
-                src="/resp-dev.png"
-                alt="picture of multiple devices"
-                width={200}
-                height={120}
-                className=" opacity-80"
-                layout="fixed"
-              />
-              <p className="pt-4 text-base md:text-lg lg:text-xl">
-                Pixel-perfect layout on all devices. Mobile-first design
-                approach.
+              <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
+                Studies by Google show that 53% of mobile users will abandon a
+                website if it takes longer than 3 seconds to load. Our websites
+                are built on modern web technologies&nbsp;
+                <a
+                  href="https://jamstack.org/what-is-jamstack/"
+                  className=" text-highlight1 hover:text-highlight1"
+                >
+                  (Jamstack)
+                </a>
+                , and are optimized for incredibly fast load times. This means
+                better conversion rates for your business, and a better
+                experience for your patrons.
               </p>
             </div>
-          </FadeIn>
+          </FadeRight>
 
-          <FadeIn>
-            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12 ">
-              <span className="pb-2 text-2xl font-medium md:text-3xl">
-                Fast
-              </span>
-              <Image
-                src="/speedometer.png"
-                alt="picture of speedometer"
-                width={200}
-                height={120}
-                className=" opacity-80"
-                layout="fixed"
-              />
-              <p className="w-full pt-4 pb-8 text-base md:text-lg lg:text-xl">
-                Ultra-fast load times are an essential aspect of every project.
+          <FadeRight>
+            <div className="py-8">
+              <h2 className="flex flex-row pb-2 ">
+                <Arrow />
+                Fully Responsive
+              </h2>
+
+              <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
+                Globally, two thirds of all website visits come from mobile
+                devices. Now more than ever, it is essential that your website
+                looks good on a mobile browser. We promise to deliver
+                pixel-perfect design that looks and works great on all devices,
+                guaranteed.
               </p>
             </div>
-          </FadeIn>
-          <FadeIn>
-            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12 ">
-              <span className="pb-2 text-2xl font-medium md:text-3xl">
-                Intuitive
-              </span>
-              <Image
-                src="/lightbulb.png"
-                alt="picture of lightbuld"
-                width={180}
-                height={120}
-                layout="fixed"
-              />
-              <p className="w-full pt-4 pb-8 text-base md:text-lg lg:text-xl">
-                I deliver a clean, modern UI and smooth, seamless UX.
+          </FadeRight>
+          <FadeRight>
+            <div className="py-8">
+              <h2 className="flex flex-row pb-2 ">
+                <Arrow />
+                Intuitive Design
+              </h2>
+
+              <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
+                Visitors to your website should not have to guess where to go or
+                what to do next. Clear navigation and concise presentation of
+                information are cornerstones of our design process.
               </p>
             </div>
-          </FadeIn>
+          </FadeRight>
+
+          <FadeRight>
+            <div className="py-8 ">
+              <h2 className="flex flex-row pb-2 ">
+                <Arrow />
+                Transparent Pricing
+              </h2>
+
+              <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
+                No need for lengthy consultations before you even get a quote.
+                Our pricing structure was devised with affordability and
+                convenience in mind. That being said, we are here to help. So
+                please feel free to reach out for any reason, any time.
+              </p>
+            </div>
+          </FadeRight>
         </div>
       </div>
     </section>

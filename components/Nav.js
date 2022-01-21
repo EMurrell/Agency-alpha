@@ -8,8 +8,9 @@ import { useState, useEffect } from "react";
 
 const links = [
   { name: "About", to: "#About", id: 1 },
-  { name: "Work", to: "#Work", id: 2 },
-  { name: "Contact", to: "#Contact", id: 3 },
+  { name: "Pricing", to: "#Pricing", id: 2 },
+  { name: "FAQ", to: "#FAQ", id: 3 },
+  { name: "Contact", to: "#Contact", id: 4 },
 ];
 
 const itemVariants = {
@@ -52,19 +53,19 @@ export default function Nav() {
 
   return (
     <nav
-      className={`text-neutral-100 w-full flex backdrop-blur-sm justify-between  font-display  fixed z-10 trasition ease-in-out duration-500 ${
+      className={`text-white w-full flex backdrop-blur-sm justify-between  font-display  fixed z-50 trasition ease-in-out duration-500 ${
         animateNav && "shadow-xl "
       }`}
     >
       <div
         className={`flex w-screen py-4 bg-transparent   ${
           animateNav &&
-          "py-0  backdrop-blur-lg bg-neutral-800/30 trasition ease-in-out duration-500"
+          "py-0  backdrop-blur-lg bg-neutral-900/30 trasition ease-in-out duration-500"
         } mx-auto   justify-between `}
       >
         <Link href="/">
           <a className="inline-flex mx-4 my-5 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 hover:shadow-bottom ">
-            Eric Murrell
+            My Company
           </a>
         </Link>
 
@@ -72,7 +73,7 @@ export default function Nav() {
         <AnimatePresence>
           {open && (
             <motion.aside
-              className="fixed top-0 right-0 h-screen bg-neutral-700 md:hidden overflow"
+              className="fixed top-0 right-0 h-screen bg-highlight1 md:hidden overflow"
               initial={{ width: 0 }}
               transition={{ type: "tween" }}
               animate={{
@@ -90,30 +91,15 @@ export default function Nav() {
                 exit="closed"
                 variants={sideVariants}
               >
-                <div className="pt-20 tracking-widest font-logo">
-                  Eric Murrell
+                <div className="pt-12 pb-16 tracking-widest border-b-2 font-logo border-neutral-100">
+                  My Company
                 </div>
-                <div className="flex flex-row pb-8 border-b-2 border-neutral-500">
-                  <a href="https://github.com/emurrell">
-                    <Github className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-highlight" />
-                  </a>
-                  <a href="mailto:emurrell.dev@gmail.com">
-                    <MailIcon className="w-8 h-8 my-6 mr-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-highlight" />
-                  </a>
 
-                  <a href="https://twitter.com/emurrelldev">
-                    <Twitter className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-highlight" />
-                  </a>
-
-                  <a href="https://dev.to/emurrell">
-                    <Devdotto className="w-8 h-8 my-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-highlight" />
-                  </a>
-                </div>
                 {links.map(({ name, to, id }) => (
                   <motion.a
                     key={id}
                     href={to}
-                    className="flex mt-16 transition duration-100 ease-in-out transform text-neutral-100 hover:shadow-bottom w-max "
+                    className="flex mt-12 transition duration-100 ease-in-out transform hover:shadow-bottom w-max "
                     variants={itemVariants}
                     aria-current={links.current ? "page" : undefined}
                     onClick={cycleOpen}
@@ -140,7 +126,7 @@ export default function Nav() {
             <a
               key={id}
               href={to}
-              className="mx-8 my-6 text-lg font-normal transition duration-100 ease-in-out transform lg:mx-12 text-neutral-100 md:text-xl hover:shadow-bottom "
+              className="mx-8 my-6 text-lg font-normal transition duration-100 ease-in-out transform lg:mx-12 9 md:text-xl hover:shadow-bottom "
             >
               {name}
             </a>

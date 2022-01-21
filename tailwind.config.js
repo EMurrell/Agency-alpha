@@ -8,16 +8,17 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        bottom: "inset 0px -11px 0px   #ef4444",
-        bottom2: "inset 0px -13px 0px   #ef4444",
-        bottom3: "inset 0px -14px 0px   #ef4444",
+        bottom: "inset 0px -11px 0px   #ff5f00",
+        bottom2: "inset 0px -13px 0px   #ff5f00",
+        bottom3: "inset 0px -14px 0px   #ff5f00",
         bottom4: "inset 0px -11px 0px   #525252",
       },
       backgroundImage: {
-        hero: "url('/wave4.svg')",
+        hero: "url('/hero2.svg')",
       },
       colors: {
-        highlight: "#ef4444",
+        highlight1: "#FF5f00",
+        dark: "#242524",
       },
       fontFamily: {
         logo: ["Play"],
