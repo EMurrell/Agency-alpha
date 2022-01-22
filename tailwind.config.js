@@ -8,22 +8,22 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        bottom: "inset 0px -11px 0px   #ff5f00",
-        bottom2: "inset 0px -13px 0px   #ff5f00",
-        bottom3: "inset 0px -14px 0px   #ff5f00",
+        bottom: "inset 0px -11px 0px   #Fe5000",
+        bottom2: "inset 0px -13px 0px   #Fe5000",
+        bottom3: "inset 0px -14px 0px   #Fe5000",
         bottom4: "inset 0px -11px 0px   #525252",
       },
       backgroundImage: {
-        hero: "url('/hero2.svg')",
+        hero: "url('/hero5.svg')",
       },
       colors: {
-        highlight1: "#FF5f00",
+        highlight1: "#Fe5000",
         dark: "#242524",
       },
       fontFamily: {
         logo: ["Play"],
         display: ["Poppins"],
-        body: ["Poppins"],
+        body: ["Space Grotesk"],
       },
     },
   },

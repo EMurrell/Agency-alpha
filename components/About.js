@@ -20,7 +20,7 @@ export default function About() {
         </div>
       </FadeUp>
 
-      <div className="pt-4 text-2xl font-normal md:text-3xl lg:text-4xl">
+      <div className="pt-4 text-2xl font-normal md:text-3xl lg:text-4xl font-body">
         <div className="flex flex-col pb-4">
           <FadeRight>
             <div className="py-8">
@@ -30,12 +30,10 @@ export default function About() {
               </h2>
 
               <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
-                Studies by Google show that 53% of mobile users will abandon a
-                website if it takes longer than 3 seconds to load. Our websites
-                are built on modern web technologies&nbsp;
+                Our websites are built on modern web technologies&nbsp;
                 <a
                   href="https://jamstack.org/what-is-jamstack/"
-                  className="italic  text-highlight1 hover:text-highlight1"
+                  className="italic text-highlight1 hover:text-highlight1"
                 >
                   (Jamstack)
                 </a>
@@ -54,11 +52,9 @@ export default function About() {
               </h2>
 
               <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
-                Globally, two thirds of all website visits come from mobile
-                devices. Now more than ever, it is essential that your website
-                looks good on a mobile browser. We promise to deliver
-                pixel-perfect design that looks and works great on all devices,
-                guaranteed.
+                Now more than ever, it is essential that your website looks good
+                on a mobile browser. We deliver pixel-perfect design that looks
+                and works great on all devices, guaranteed.
               </p>
             </div>
           </FadeRight>
@@ -70,9 +66,8 @@ export default function About() {
               </h2>
 
               <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
-                Visitors to your website should not have to guess where to go or
-                what to do next. Clear navigation and concise presentation of
-                information are cornerstones of our design process.
+                Clear navigation and concise presentation of information are
+                cornerstones of our design process.
               </p>
             </div>
           </FadeRight>
@@ -85,10 +80,9 @@ export default function About() {
               </h2>
 
               <p className="pb-2 pl-2 text-base md:text-lg lg:text-xl ">
-                No need for lengthy consultations before you even get a quote.
                 Our pricing structure was devised with affordability and
-                convenience in mind. That being said, we are here to help. So
-                please feel free to reach out for any reason, any time.
+                convenience in mind. We&apos;re here to get you online so you
+                can focus on running your business.
               </p>
             </div>
           </FadeRight>

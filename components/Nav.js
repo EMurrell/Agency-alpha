@@ -64,7 +64,7 @@ export default function Nav() {
         } mx-auto   justify-between `}
       >
         <Link href="/">
-          <a className="inline-flex mx-4 my-4 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 hover:shadow-bottom ">
+          <a className="inline-flex mx-4 my-4 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 ">
             My Company
           </a>
         </Link>

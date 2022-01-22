@@ -64,7 +64,7 @@ export default function Pricing() {
                       <div className="flex flex-row">
                         <Arrow />
                         <h3
-                          className="inline-flex px-2 py-1 text-xl font-semibold tracking-wide uppercase md:text-2xl text-neutral-900 "
+                          className="inline-flex px-2 py-1 text-xl font-semibold tracking-wide uppercase text-highlight1 md:text-2xl text-neutral-900 "
                           id="tier-standard"
                         >
                           {tier.name}
@@ -73,12 +73,12 @@ export default function Pricing() {
                       <div className="flex items-baseline mt-4 text-6xl font-semibold text-neutral-900">
                         ${tier.price}
                       </div>
-                      <p className="mt-5 text-lg text-neutral-900">
+                      <p className="mt-5 text-lg font-medium text-neutral-900 font-body">
                         {tier.description}
                       </p>
                     </div>
 
-                    <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-white sm:p-10 sm:pt-6">
+                    <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-white font-body sm:p-10 sm:pt-6">
                       <ul role="list" className="space-y-4">
                         {tier.features.map((feature) => (
                           <li key={feature} className="flex items-start">
@@ -110,10 +110,10 @@ export default function Pricing() {
             </div>
           </div>
           <div className="relative px-4 mx-auto mt-8 text-xs max-w-7xl sm:px-6 lg:px-8 lg:mt-5 text-neutral-900">
-            <div className="max-w-md mx-auto lg:max-w-5xl indent-4">
+            <div className="max-w-md mx-auto lg:max-w-5xl ">
               <p>
-                <em>PLEASE NOTE:</em> &ensp;Does not include content creation
-                (i.e. copywriting, photography, graphic/logo design, etc).
+                <em>NOTE:</em> &ensp;Does not include content creation (i.e.
+                copywriting, photography, graphic/logo design, etc).
               </p>
               <p>
                 * We buy the domain and pay for your first year. Domain renewal
@@ -125,7 +125,7 @@ export default function Pricing() {
                 ** Custom email hosting/
                 <a
                   href="https://workspace.google.com/pricing.html?gclid=CjwKCAiA55mPBhBOEiwANmzoQmEuufRueGbdWlalzcLKSN_WebvB_43Mrwr9IBaGv5gXlLcFq29VgBoCFnMQAvD_BwE&gclsrc=aw.ds"
-                  className="italic underline"
+                  className="italic text-highlight1"
                 >
                   Google Workspace
                 </a>{" "}
