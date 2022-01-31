@@ -14,11 +14,13 @@ module.exports = {
         bottom4: "inset 0px -11px 0px   #525252",
       },
       backgroundImage: {
-        hero: "url('/hero5.svg')",
+        hero: "url('/poly1.jpg')",
+        quote: "url('/dots.svg)",
       },
       colors: {
-        highlight1: "#Fe5000",
-        dark: "#242524",
+        highlight1: "#e9322e",
+        highlight2: "#e9322e",
+        dark: "#45433e",
       },
       fontFamily: {
         logo: ["Play"],
@@ -27,5 +29,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
