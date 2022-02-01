@@ -15,9 +15,9 @@ export default function Header() {
   return (
     <section
       id="Home"
-      className="flex flex-col w-full h-screen px-2 pt-20 bg-neutral-800 text-highlight1 font-display md:px-10 lg:px-20 xl:px-28 "
+      className="flex flex-col w-full px-2 pt-20 overflow-y-visible bg-center bg-no-repeat bg-cover text-neutral-700 bg-hero font-display md:px-10 lg:px-20 xl:px-28 "
     >
-      <main className="flex flex-col justify-center h-screen pt-8 pl-2 font-medium tracking-tight pb-28 md:tracking-normal md:pb-16">
+      <main className="flex flex-col justify-center h-screen pt-8 pl-2 font-semibold tracking-tight lg:font-medium pb-28 md:tracking-normal md:pb-16">
         <FadeUp>
           <h1 className="flex flex-col text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl">
             Modern Web Solutions
@@ -66,7 +66,7 @@ export default function Header() {
 
         <DelayedFadeIn>
           <Link href={"/#About"} passHref>
-            <button className="px-6 py-2 mt-2 ml-1 text-lg border-2 shadow-lg cursor-pointer lg:px-10 lg:py-3 2xl:ml-2 hover:bg-highlight1 border-highlight1 text-highlight1 lg:mt-4 lg:text-2xl hover:text-neutral-900 shadow-neutral-900/50 hover:bg-transparent">
+            <button className="px-6 py-2 mt-2 mb-20 ml-1 text-lg font-medium bg-white border-2 shadow-lg cursor-pointer hover:text-white lg:px-10 lg:py-3 2xl:ml-2 border-highlight1 lg:mt-4 lg:text-2xl text-highlight1 shadow-neutral-600/30 hover:bg-highlight1">
               Learn More
             </button>
           </Link>

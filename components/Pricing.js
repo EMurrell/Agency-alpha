@@ -42,10 +42,10 @@ export default function Pricing() {
       <FadeIn>
         <div className="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto space-y-1 lg:max-w-none">
-            <p className="text-4xl font-medium text-neutral-900 lg:text-6xl">
+            <p className="text-4xl font-medium text-neutral-800 lg:text-6xl">
               Pay Once.
             </p>
-            <p className="pt-1 text-2xl font-medium lg:pt-3 lg:text-4xl text-neutral-900">
+            <p className="pt-1 text-2xl font-medium lg:pt-3 lg:text-4xl text-neutral-800">
               No monthly hosting fees.
             </p>
           </div>
@@ -60,22 +60,22 @@ export default function Pricing() {
                 {tiers.map((tier) => (
                   <div
                     key={tier.name}
-                    className="flex flex-col mx-2 overflow-hidden border shadow-lg border-highlight1"
+                    className="flex flex-col mx-2 overflow-hidden border shadow-md border-highlight1"
                   >
                     <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                       <div className="flex flex-row">
                         <Arrow />
                         <h3
-                          className="inline-flex px-2 py-1 text-xl font-semibold tracking-wide uppercase text-highlight1 md:text-2xl text-neutral-900 "
+                          className="inline-flex px-2 py-1 text-xl font-semibold tracking-wide uppercase md:text-2xl text-neutral-800 "
                           id="tier-standard"
                         >
                           {tier.name}
                         </h3>
                       </div>
-                      <div className="flex items-baseline mt-4 text-6xl font-semibold text-neutral-900">
+                      <div className="flex items-baseline mt-4 text-6xl font-semibold text-neutral-800">
                         ${tier.price}
                       </div>
-                      <p className="mt-5 text-lg font-medium text-neutral-900 font-body">
+                      <p className="mt-5 text-lg font-medium text-neutral-800 font-body">
                         {tier.description}
                       </p>
                     </div>
@@ -90,7 +90,7 @@ export default function Pricing() {
                                 aria-hidden="true"
                               />
                             </div>
-                            <p className="ml-3 text-base text-neutral-900">
+                            <p className="ml-3 text-base text-neutral-800">
                               {feature}
                             </p>
                           </li>
@@ -99,7 +99,7 @@ export default function Pricing() {
                       <div className="">
                         <a
                           href={tier.href}
-                          className="flex items-center justify-center px-5 py-3 text-base font-medium border shadow-md text-neutral-900 bg-highlight1 border-highlight1 shadow-neutral-400 hover:text-highlight1 hover:bg-transparent"
+                          className="flex items-center justify-center px-5 py-3 text-base font-medium border shadow-md text-neutral-800 bg-highlight1 border-highlight1 shadow-neutral-500/50 hover:text-highlight1 hover:bg-transparent"
                           aria-describedby="tier-standard"
                         >
                           Get started
@@ -111,7 +111,7 @@ export default function Pricing() {
               </div>
             </div>
           </div>
-          <div className="relative px-4 mx-auto mt-8 text-xs max-w-7xl sm:px-6 lg:px-8 lg:mt-5 text-neutral-900">
+          <div className="relative px-4 mx-auto mt-8 text-xs max-w-7xl sm:px-6 lg:px-8 lg:mt-5 text-neutral-800">
             <div className="max-w-md mx-auto lg:max-w-5xl ">
               <p>
                 * We buy your domain for your first year. Domain renewal

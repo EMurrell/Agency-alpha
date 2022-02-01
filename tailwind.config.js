@@ -14,12 +14,12 @@ module.exports = {
         bottom4: "inset 0px -11px 0px   #525252",
       },
       backgroundImage: {
-        hero: "url('/poly1.jpg')",
+        hero: "url('/bluegray3.jpg')",
         quote: "url('/dots.svg)",
       },
       colors: {
-        highlight1: "#e9322e",
-        highlight2: "#e9322e",
+        highlight1: "#fe5000",
+        highlight2: "#22d3ee",
         dark: "#45433e",
       },
       fontFamily: {

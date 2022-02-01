@@ -22,8 +22,8 @@ const features = [
 export default function Example() {
   return (
     <div className="relative pb-12 bg-white font-display">
-      <div className="h-32 bg-neutral-800"></div>
-      <div className="max-w-md px-4 mx-auto -mt-24 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+      <div className="h-40 bg-transparent"></div>
+      <div className="max-w-md px-4 mx-auto text-center -mt-52 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <div className="">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {features.map((feature) => (

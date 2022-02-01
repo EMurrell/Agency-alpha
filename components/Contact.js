@@ -12,9 +12,9 @@ export default function Contact() {
   return (
     <footer
       id="Contact"
-      className="flex flex-col px-12 pt-10 bg-dark xl:h-auto md:px-24 lg:px-52 text-neutral-100 font-display"
+      className="flex flex-col px-8 pt-10 xl:h-auto md:px-24 lg:px-52 text-neutral-700 font-display "
     >
-      <div className="flex flex-col py-20 2xl:py-20 lg:flex-row ">
+      <div className="flex flex-col py-20 border-t 2xl:py-20 lg:flex-row border-neutral-200">
         <FadeUp>
           <h1 className="pr-2 mb-12 text-4xl font-medium md:text-5xl lg:text-6xl lg:w-1/2">
             Let&apos;s make something great.
@@ -56,7 +56,7 @@ export default function Contact() {
           </div>
         </FadeIn>
       </div>
-      <div className="flex flex-col justify-center py-12 text-base text-center border-t border-neutral-500 lg:text-lg text-neutral-500">
+      <div className="flex flex-col justify-center py-12 text-base text-center border-t border-neutral-200 lg:text-lg text-neutral-500">
         <div className="flex flex-row justify-center pb-1">
           Built with&nbsp;
           <Nextdotjs className="w-6 h-6 mx-2" />

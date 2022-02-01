@@ -7,15 +7,15 @@ import {
 
 export default function Testimonials() {
   return (
-    <section className="py-10 overflow-hidden bg-neutral-100 md:py-12 font-display ">
+    <section className="py-10 overflow-hidden md:py-12 font-display ">
       <div className="px-8 lg:px-8">
         <div className="flex flex-col justify-center ">
-          <h1 className="py-4 text-2xl font-medium text-center md:text-3xl ">
+          <h1 className="py-4 text-2xl font-medium text-center md:text-3xl text-neutral-800">
             What Our Clients Say:
           </h1>
-          <div className="flex self-center w-24 border-t border-highlight1"></div>
+          <div className="flex self-center w-24 border-t-2 border-highlight1"></div>
           <blockquote className="mt-4">
-            <div className="max-w-3xl mx-auto text-lg leading-7 text-center text-neutral-900 md:text-2xl ">
+            <div className="max-w-3xl mx-auto text-lg leading-7 text-center text-neutral-800 md:text-2xl ">
               <p>
                 &ldquo;I needed to modernize my old website, and I&apos;m happy
                 I came across (company-name). Eric did a great job designing my

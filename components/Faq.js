@@ -27,7 +27,7 @@ const faqs = [
       "Our websites are developed following SEO best practices, and are optimized for ranking algorithms to easily find your website. ",
   },
   {
-    question: "Do you provide copy writing for websites?",
+    question: "Do you write copy for websites?",
     answer:
       "Basic copywriting is included, however if you require a more extensive amount of writing, custom solutions are offered.",
   },
@@ -39,7 +39,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="bg-neutral-50 font-display">
+    <div className=" font-display">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-neutral-200">
           <h2 className="text-3xl font-medium text-center text-neutral-900 sm:text-4xl">
